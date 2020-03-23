@@ -22,7 +22,7 @@ def checkPlayerBet(player, bet):  # check if the player can bet in this amount o
 
 
 def hit():
-    ans = str(input("Hit or Stop? H|S:"))
+    ans = str(input("Hit or Stop? H|S:").upper())
     return ans == 'H'  # keep hit
 
 
@@ -59,5 +59,5 @@ def endGame(player, board, dealer, winner):
 
 
 def replay():
-    ans = str(input('Do you want another game? Y|N:'))
+    ans = str(input('Do you want another game? Y|N:').upper())
     return ans == 'Y'
